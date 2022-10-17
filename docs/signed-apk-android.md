@@ -19,7 +19,8 @@ On Windows `keytool` must be run from `C:\Program Files\Java\jdkx.x.x_x\bin`, as
 
     keytool -genkeypair -v -storetype PKCS12 -keystore my-upload-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
 
-This command prompts you for passwords for the keystore and key and for the Distinguished Name fields for your key. It then generates the keystore as a file called `my-upload-key.keystore`.
+This command prompts you for password for the keystore and for the Distinguished Name fields for your key. It then generates the keystore as a file called `my-upload-key.keystore`.
+Note: keystore password and key password is the same.
 
 The keystore contains a single key, valid for 10000 days. The alias is a name that you will use later when signing your app, so remember to take note of the alias.
 
